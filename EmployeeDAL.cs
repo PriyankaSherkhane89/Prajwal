@@ -27,6 +27,7 @@ namespace DAL
 			IDbConnection conn = new MySqlConnection(conenctionString);
 			try
 			{
+				//second change
 				conn.Open();
 				string query = "SELECT * From employee";
 				IDbCommand cmd = new MySqlCommand(query, conn as MySqlConnection);
